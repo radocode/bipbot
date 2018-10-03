@@ -30,7 +30,7 @@ bot.on("message", async message => {
         let saldoembed = new Discord.RichEmbed()
         .setColor("#4286f4")
         .setTitle(`:bus: Bip numero ${bip}`)        
-        .setDescription(`Saldo: ${body.saldoTarjeta} Fecha Saldo: ${body.fechaSaldo}`);        
+        .setDescription(`Saldo: ${body.saldoTarjeta} Fecha Saldo: ${body.fechaSaldo} Estado Contrato: ${body.estadoContrato}`);        
 
         message.channel.send(saldoembed);
     }
